@@ -1,0 +1,9 @@
+# Render Static Site for the Theingabar Invoice PWA.
+# Deploy via: Render Dashboard -> New -> Static Site -> connect the GitHub repo below.
+# No build step: this repo already contains the finished static files.
+services:
+  - type: web
+    name: theingabar-invoice
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
